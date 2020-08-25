@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'HelveticaNowTextBold';
+    src: url('fonts/HelveticaNowTextBold.eot');
+    src: url('fonts/HelveticaNowTextBold.eot') format('embedded-opentype'),
+         url('fonts/HelveticaNowTextBold.woff2') format('woff2'),
+         url('fonts/HelveticaNowTextBold.woff') format('woff'),
+         url('fonts/HelveticaNowTextBold.ttf') format('truetype'),
+         url('fonts/HelveticaNowTextBold.svg#HelveticaNowTextBold') format('svg');
+}

@@ -1,0 +1,369 @@
+/* fonty */
+
+@font-face {
+    font-family: 'HelveticaNeueBold';
+    src: url('fonts/HelveticaNeueBold.eot');
+    src: url('fonts/HelveticaNeueBold.eot') format('embedded-opentype'),
+         url('fonts/HelveticaNeueBold.woff2') format('woff2'),
+         url('fonts/HelveticaNeueBold.woff') format('woff'),
+         url('fonts/HelveticaNeueBold.ttf') format('truetype'),
+         url('fonts/HelveticaNeueBold.svg#HelveticaNeueBold') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCondensedBold';
+    src: url('fonts/HelveticaNeueCondensedBold.eot');
+    src: url('fonts/HelveticaNeueCondensedBold.eot') format('embedded-opentype'),
+         url('fonts/HelveticaNeueCondensedBold.woff2') format('woff2'),
+         url('fonts/HelveticaNeueCondensedBold.woff') format('woff'),
+         url('fonts/HelveticaNeueCondensedBold.ttf') format('truetype'),
+         url('fonts/HelveticaNeueCondensedBold.svg#HelveticaNeueCondensedBold') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLight';
+    src: url('fonts/HelveticaNeueLight.eot');
+    src: url('fonts/HelveticaNeueLight.eot') format('embedded-opentype'),
+         url('fonts/HelveticaNeueLight.woff2') format('woff2'),
+         url('fonts/HelveticaNeueLight.woff') format('woff'),
+         url('fonts/HelveticaNeueLight.ttf') format('truetype'),
+		 url('fonts/HelveticaNeueLight.svg#HelveticaNeueLight') format('svg');
+}
+
+@font-face {
+	font-family: 'HelveticaNowTextExtraBold';
+	src: url('fonts/HelveticaNowTextExtraBold.eot');
+	src: url('fonts/HelveticaNowTextExtraBold.eot') format('embedded-opentype'),
+		 url('fonts/HelveticaNowTextExtraBold.woff2') format('woff2'),
+		 url('fonts/HelveticaNowTextExtraBold.woff') format('woff'),
+		 url('fonts/HelveticaNowTextExtraBold.ttf') format('truetype'),
+		 url('fonts/HelveticaNowTextExtraBold.svg#HelveticaNowTextExtraBold') format('svg');
+}
+
+@font-face {
+	font-family: 'HelveticaNowTextLight';
+	src: url('fonts/HelveticaNowTextLight.eot');
+	src: url('fonts/HelveticaNowTextLight.eot') format('embedded-opentype'),
+		url('fonts/HelveticaNowTextLight.woff2') format('woff2'),
+		url('fonts/HelveticaNowTextLight.woff') format('woff'),
+		url('fonts/HelveticaNowTextLight.ttf') format('truetype'),
+		url('fonts/HelveticaNowTextLight.svg#HelveticaNowTextLight') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaNowTextBold';
+    src: url('fonts/HelveticaNowTextBold.eot');
+    src: url('fonts/HelveticaNowTextBold.eot') format('embedded-opentype'),
+         url('fonts/HelveticaNowTextBold.woff2') format('woff2'),
+         url('fonts/HelveticaNowTextBold.woff') format('woff'),
+         url('fonts/HelveticaNowTextBold.ttf') format('truetype'),
+         url('fonts/HelveticaNowTextBold.svg#HelveticaNowTextBold') format('svg');
+}
+
+@font-face {
+    font-family: 'HelveticaNeueUltraLight';
+    src: url('fonts/HelveticaNeueUltraLight.eot');
+    src: url('fonts/HelveticaNeueUltraLight.eot') format('embedded-opentype'),
+         url('fonts/HelveticaNeueUltraLight.woff2') format('woff2'),
+         url('fonts/HelveticaNeueUltraLight.woff') format('woff'),
+         url('fonts/HelveticaNeueUltraLight.ttf') format('truetype'),
+         url('fonts/HelveticaNeueUltraLight.svg#HelveticaNeueUltraLight') format('svg');
+}
+				
+/* fonty hotovo */
+
+
+html	{
+	background-color: #353535
+}
+.container {background-color: #272727;
+	max-width: 1250px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'HelveticaNeueLight';
+	font-size: 120%;
+	margin-bottom: 0;
+}
+
+.vrsek {
+	background-image: url(images/podklad_big.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+.zahlavi {
+	display: flex;
+}
+
+.nescroll {
+	flex: 1;
+}
+
+.logo {
+	flex: 1;
+}
+
+.navigace {
+	flex: 2;
+	list-style: none;
+	margin-top: 40px;
+}
+
+.navigace li {
+	list-style: none;
+	float: left;
+}
+
+.navigace a {
+	padding: 0px 35px;
+	font-weight: normal;
+}
+
+.jazyky {
+	padding-top: 40px;
+	padding-right: 130px;
+	text-align: right;
+	flex:1;
+}
+
+.jazyky img {
+	max-width: 3%;
+	max-height: 3%;
+	padding-bottom: 4px;
+}
+
+.fix {
+	clear: both;
+}
+
+.mix {
+	display: flex;
+}
+
+.trojky {
+	flex: 1;
+	border-right: 1px solid #3c3c3c;
+}
+
+.trojky img {
+	display: block;
+	max-width: 50%;
+	max-height: 50%;
+	margin-top: auto;
+	padding-top: 350px;
+}
+
+.sipka {
+	flex: 1;
+	padding-left: 275px;
+	padding-top: 520px;
+}
+
+.sipka img {
+	max-width: 15%;
+	max-height: 15%;
+}
+
+.ii {
+	flex: 1;
+	line-height: 0.2;
+}
+
+.innovation {
+	font-family: 'HelveticaNeueUltraLight';
+	padding-left: 45px;
+	padding-top: 100px;
+}
+
+.innovation p {
+	font-size: 300%;
+	color: #45bde9;
+}
+
+.industry {
+	padding-right: 40px;
+	font-family: 'HelveticaNowTextBold';
+}
+
+.industry p {
+	font-weight: normal;
+	font-size: 300%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+	margin-top: 0
+}
+
+body p {
+	color:#FFFFFF; 
+}
+
+.nadpis {
+	font-family: 'HelveticaNowTextExtraBold';
+	font-size: 120%
+}
+
+.text {
+	color: #FFFFFF;
+	padding-left: 315px;
+	padding-bottom: 70px;
+	padding-right: 200px;
+	padding-top: 10px;
+}
+
+.HS {
+	padding-bottom: 30px;
+	color: #FFFFFF;
+}
+
+.HS_obdelnik {
+	position: relative;
+	max-width: 75%;
+	margin-left: auto;
+}
+
+.HS_obdelnik h3 {
+	font-family: 'HelveticaNeueCondensedBold';
+}
+
+.HS_nadpis {
+	position: absolute;
+	bottom: 180px;
+	left: 600px;
+	font-size: 150%;
+	color: #FFFFFF;
+}
+
+.HS_text	{
+	position: absolute;
+	bottom: 70px;
+	left: 420px;
+	padding-right: 80px;
+}
+
+.IOT {
+	padding-bottom: 30px;
+	color: #FFFFFF;
+}
+
+.IOT_obdelnik {
+	position: relative;
+	max-width: 65%;
+	margin-left: auto;
+}
+
+.IOT_obdelnik h3 {
+	font-family: 'HelveticaNeueCondensedBold';
+}
+
+.IOT_nadpis {
+	position: absolute;
+	bottom: 170px;
+	left: 60px;
+	font-size: 150%;
+	color: #FFFFFF;
+}
+
+.IOT_text	{
+	position: absolute;
+	bottom: 80px;
+	left: 60px;
+	padding-right: 350px;
+}
+
+.APP_obdelnik {
+	position: relative;
+	max-width: 85%;
+	margin-left: auto;
+}
+
+.APP_obdelnik h3 {
+	font-family: 'HelveticaNeueCondensedBold';
+}
+
+.APP_nadpis {
+	position: absolute;
+	bottom: 190px;
+	left: 600px;
+	font-size: 150%;
+	color: #FFFFFF;
+}
+
+.APP_text	{
+	position: absolute;
+	bottom: 95px;
+	left: 470px;
+	padding-right: 50px;
+}
+
+a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.spodek {
+	display: flex;
+	background-image: url(images/podklad_end.png);
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	padding-top: 60px;
+	padding-bottom: 0px;
+}
+.contacts {
+	flex: 2;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 180%;
+	padding-top: 80px;
+}
+
+.kontakty {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 400px;
+	padding-top: 50px;
+	padding-left: 50px;
+	border-right: 1px solid #3c3c3c;
+}
+
+.a {
+	flex: 1;
+	text-align: left;
+	padding-top: 80px;
+}
+
+.b {
+	flex: 1;
+	line-height: 0.6;
+	margin-top: 0px;
+}
+
+.b a {
+	color: #45bde9;
+	font-weight: normal;
+}
+
+.c {
+	flex: 1;
+	line-height: 0.6;
+}
+
+.logo2 {
+	flex: 1;
+	margin-left: auto;
+	margin-top: auto;
+	margin-bottom: 0;
+}
+
+.logo2 img {
+	
+}

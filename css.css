@@ -96,10 +96,6 @@ html	{
 	display: flex;
 }
 
-.nescroll {
-	flex: 1;
-}
-
 .logo {
 	flex: 1;
 }
@@ -120,11 +116,32 @@ html	{
 	font-weight: normal;
 }
 
+@media screen and (max-width: 1280px) {
+	.navigace a {
+		padding: 0px 20px;
+		font-weight: normal;
+	}
+
+	.navigace {
+		flex: 3;
+		list-style: none;
+		margin-top: 40px;
+	}
+}
+
 .jazyky {
 	padding-top: 40px;
 	padding-right: 130px;
 	text-align: right;
 	flex:1;
+}
+
+@media screen and (max-width: 1280px) {
+	.jazyky {
+		padding-top: 40px;
+		padding-right: 80px;
+		text-align: right;
+		flex:1;}
 }
 
 .jazyky img {
@@ -217,89 +234,104 @@ body p {
 	padding-top: 10px;
 }
 
-.HS {
-	padding-bottom: 30px;
-	color: #FFFFFF;
+@media screen and (max-width: 1280px) {
+	.text {
+		color: #FFFFFF;
+		padding-left: 215px;
+		padding-bottom: 50px;
+		padding-right: 100px;
+		padding-top: 10px;
+	}
 }
 
-.HS_obdelnik {
-	position: relative;
-	max-width: 75%;
+.navic {
+	width: 938px;
+    height: 295px;
+    box-sizing: content-box;
+	background-image: url(images/podklad_HS.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: right;
 	margin-left: auto;
 }
 
-.HS_obdelnik h3 {
+.navic h3 {
 	font-family: 'HelveticaNeueCondensedBold';
+	color: #fff;
+	font-size: 180%;
+	padding-top: 40px;
+	padding-left: 600px;
+	display: block;
+	margin-block-start: 0;
+	margin-block-end: 0;
+
+}
+.navic p {
+	padding: 0px 80px 70px 420px;
+	display: block;
+	margin-block-start: 0;
+	margin-block-end: 0;
 }
 
-.HS_nadpis {
-	position: absolute;
-	bottom: 180px;
-	left: 600px;
-	font-size: 150%;
-	color: #FFFFFF;
+.IObd {
+	width: 813px;
+    height: 295px;
+    box-sizing: content-box;
+	background-image: url(images/podklad_IOT.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: right;
+	margin-left: auto;
+	display: block;
+	margin-block-start: 0;
+	margin-block-end: 0;
 }
 
-.HS_text	{
-	position: absolute;
-	bottom: 70px;
-	left: 420px;
-	padding-right: 80px;
+.IObd h3 {
+	font-family: 'HelveticaNeueCondensedBold';
+	color: #fff;
+	font-size: 180%;
+	padding-top: 40px;
+	padding-left: 60px;
+	display: block;
+	margin-block-start: 0;
+	margin-block-end: 0;
 }
 
-.IOT {
-	padding-bottom: 30px;
-	color: #FFFFFF;
+.IObd p {
+	padding: 10px 320px 10px 60px;
+	display: block;
+	margin-block-start: 0;
+	margin-block-end: 0;
 }
 
-.IOT_obdelnik {
-	position: relative;
-	max-width: 65%;
+.Ao {
+	width: 1063px;
+    height: 295px;
+    box-sizing: content-box;
+	background-image: url(images/podklad_APP.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: top right;
 	margin-left: auto;
 }
 
-.IOT_obdelnik h3 {
+.Ao h3 {
 	font-family: 'HelveticaNeueCondensedBold';
+	color: #fff;
+	font-size: 180%;
+	padding-top: 40px;
+	padding-left: 600px;
+	display: block;
+	margin-block-start: 0;
+	margin-block-end: 0;
 }
 
-.IOT_nadpis {
-	position: absolute;
-	bottom: 170px;
-	left: 60px;
-	font-size: 150%;
-	color: #FFFFFF;
-}
-
-.IOT_text	{
-	position: absolute;
-	bottom: 80px;
-	left: 60px;
-	padding-right: 350px;
-}
-
-.APP_obdelnik {
-	position: relative;
-	max-width: 85%;
-	margin-left: auto;
-}
-
-.APP_obdelnik h3 {
-	font-family: 'HelveticaNeueCondensedBold';
-}
-
-.APP_nadpis {
-	position: absolute;
-	bottom: 190px;
-	left: 600px;
-	font-size: 150%;
-	color: #FFFFFF;
-}
-
-.APP_text	{
-	position: absolute;
-	bottom: 95px;
-	left: 470px;
-	padding-right: 50px;
+.Ao p {
+	padding: 10px 70px 10px 490px;
+	display: block;
+	margin-block-start: 0;
+	margin-block-end: 0;
 }
 
 a {

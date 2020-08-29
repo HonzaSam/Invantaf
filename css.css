@@ -86,6 +86,7 @@ html	{
 	color: white;
 }
 
+
 /* Prvni tretina */
 
 .vrsek {
@@ -97,6 +98,18 @@ background-image: url(images/logo_transparent4.png), url(images/triangles.png), 
 	position: relative;
 }
 
+@media screen and (max-width: 1100px) {
+
+	.vrsek {
+		background-image: url(images/logo_transparent4.png), url(images/triangles.png), url(images/podklad_big.png);
+			background-size: 23%, 9%, 100%;
+			background-repeat: no-repeat, no-repeat, no-repeat;
+			background-position-y: 0%, 25%, 0%;
+			background-position-x: left, left, right;
+			position: relative;
+	}
+}
+
 .zahlavi {
 	display: flex;
 }
@@ -106,12 +119,12 @@ background-image: url(images/logo_transparent4.png), url(images/triangles.png), 
 	list-style: none;
 	margin-top: 49px;
 	padding-left: 375px;
+
 }
 
 .navigace li {
 	list-style: none;
 	float: left;
-
 }
 
 .navigace a {
@@ -119,18 +132,59 @@ background-image: url(images/logo_transparent4.png), url(images/triangles.png), 
 	font-weight: normal;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1100px) {
+	
+	.zahlavi {
+		display: block
+	}
+
+	.toggle-btn {
+		text-align: right;
+		padding-top: 20px;
+		padding-right: 5%;
+	}
+	
+	
 	.navigace a {
-		padding: 0px 20px;
+		padding: 0px 0px;
 		font-weight: normal;
+		}
+
+	.navigace li {
+		list-style: none;
+		float: none;
+		text-align: right;
 	}
 
 	.navigace {
-		flex: 3;
 		list-style: none;
-		margin-top: 20px;
+		margin-top: 0px;
+		padding-right: 30px;
 	}
 }
+
+/* toggle */
+
+.toggle-btn {
+	display: none;
+}
+
+@media screen and (max-width: 1100px) {
+
+.toggle-btn-visible {
+	display: block;
+	}
+
+.toggle-target-hidden {
+	display: none;
+	}
+
+.toggle-target-expanded {
+	display: block;
+	}
+
+}
+
 
 .jazyky {
 	padding-top: 49px;
@@ -138,20 +192,27 @@ background-image: url(images/logo_transparent4.png), url(images/triangles.png), 
 	text-align: right;
 	flex: 1;
 }
-
-@media screen and (max-width: 500px) {
-	.jazyky {
-		padding-top: 40px;
-		padding-right: 80px;
-		text-align: right;
-		flex: 1;}
-}
-
+	
 .jazyky img {
 	max-width: 7%;
 	max-height: 7%;
 	padding-bottom: 4px;
 }
+
+@media screen and (max-width: 1100px) {
+	.jazyky {
+		padding-top: 0px;
+		padding-right: 5%;	
+		text-align: right;
+		flex: none;}
+
+	.jazyky img {
+		max-width: 10px;
+		max-height: 10px;
+		padding-top: 4px;
+	}
+}
+
 
 .fix {
 	clear: both;
@@ -202,6 +263,13 @@ img {
 	height: auto;
 }
 
+@media screen and (max-width: 1100px) {
+
+	.mix {
+	display: none;
+	}
+}
+
 body {
 	margin-top: 0
 }
@@ -230,15 +298,20 @@ body {
 	background: transparent;
 	color: #FFFFFF;
 	padding-left: 25%;
-	padding-bottom: 20px;
+	padding-bottom: 70px;
 	padding-right: 200px;
 	margin-top: 100px;
 	line-height: 1.7;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1100px) {
 	.text {
-
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 300px;
+		box-sizing: content-box;
+		width: auto;
+		height: auto;
 	}
 }
 
@@ -274,15 +347,49 @@ body {
 	margin-block-end: 0;
 }
 
+@media screen and (max-width: 1100px) {
+	.navic {
+		width: auto;
+		height: auto;
+		box-sizing: content-box;
+		background-image: none;
+		background-color:#4dbef7;
+		margin-bottom: 1px;
+	}
+
+		.navic h3 {
+		font-family: 'HelveticaNeueCondensedBold';
+		color: #fff;
+		font-size: 250%;
+		padding-top: 20px;
+		padding-left: 20px;
+		display: block;
+		margin-block-start: 0;
+		margin-block-end: 0;
+		
+	}
+
+	.navic2 p {
+		padding-top: 15px;
+		padding-left: 20px;
+		padding-right: 20px;
+		display: block;
+		margin-block-start: 0;
+		margin-block-end: 0;
+		padding-bottom: 20px;
+	}
+}
+
 .IObd {
 	width: 972px;
     height: 340px;
-    box-sizing: content-box;
+	box-sizing: content-box;
 	background-image: url(images/podklad_IOT.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: right;
 	margin-left: auto;
+    margin-left: auto;
 	margin-bottom: 1px;
 	display: block;
 }
@@ -306,6 +413,41 @@ body {
 	margin-block-start: 0;
 	margin-block-end: 0;
 }
+
+@media screen and (max-width: 1100px) {
+	.IObd {
+		width: auto;
+		height: auto;
+		box-sizing: content-box;
+		background-image: none;
+		background-color: rgb(51, 115, 158);
+		margin-left: auto;
+		margin-bottom: 1px;
+		display: block;
+	}
+	
+	.IObd h3 {
+		font-family: 'HelveticaNeueCondensedBold';
+		color: #fff;
+		font-size: 250%;
+		padding-top: 20px;
+		padding-left: 20px;
+		display: block;
+		margin-block-start: 0;
+		margin-block-end: 0;
+	}
+	
+	.IObd p {
+		padding-top: 15px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+		display: block;
+		margin-block-start: 0;
+		margin-block-end: 0;
+	}
+}
+
 
 .Ao {
 	width: 1168px;
@@ -338,6 +480,38 @@ body {
 	margin-block-end: 0;
 }
 
+@media screen and (max-width: 1100px) {
+	.Ao {
+		width: auto;
+		height: auto;
+		box-sizing: content-box;
+		background-image: none;
+		background-color: rgb(26, 73, 134);
+		margin-left: auto;
+	}
+	
+	.Ao h3 {
+		font-family: 'HelveticaNeueCondensedBold';
+		color: #fff;
+		font-size: 250%;
+		padding-top: 20px;
+		padding-left: 20px;
+		display: block;
+		margin-block-start: 0;
+		margin-block-end: 0;
+	}
+	
+	.Ao p {
+		padding-top: 15px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+		display: block;
+		margin-block-start: 0;
+		margin-block-end: 0;
+	}
+}
+
 a {
 	color: #FFFFFF;
 	text-decoration: none;
@@ -360,8 +534,8 @@ a {
 	position: relative;
 }
 .contacts {
-	font-family: 'HelveticaNowTextBold';
 	flex: 1;
+	font-family: 'HelveticaNowTextBold';
 	color: #FFFFFF;
 	text-align: center;
 	padding-left: 160px;
@@ -371,7 +545,6 @@ a {
 
 .kontakty {
 	flex: 1;
-	display: flex;
 	flex-direction: column;
 	padding-bottom: 400px;
 	padding-top: 50px;
@@ -409,6 +582,70 @@ a {
     top: 40px;
 	bottom: -40px;
 	left: 76%;
+}
+
+@media screen and (max-width: 1100px) {
+	.spodek {
+		background-image: url(images/end2.png), url(images/podklad_end.png);
+		background-size:23%, 70%;
+		background-repeat: no-repeat, no-repeat;
+		background-position: bottom right, bottom left;
+		padding-top: 60px;
+		padding-bottom: 0px;
+	}
+
+	.sp2 {
+		display: grid;
+	}
+
+	.contacts {
+		font-family: 'HelveticaNowTextBold';
+		color: #FFFFFF;
+		text-align: center;
+		padding-left: 50px;
+		font-size: 250%;
+		padding-top: 10px;
+	}
+	
+	.kontakty {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 250px;
+		padding-top: 0px;
+		padding-left: 50px;
+	}
+	
+	.a {
+		text-align: center;
+		padding-top: 20px;
+		padding-bottom: 8px;
+	}
+	
+	.b {
+		line-height: 0.7;
+		margin-top: 0px;
+	}
+	
+	.b a {
+		color: #45bde9;
+		font-weight: normal;
+	}
+	
+	.c {
+		line-height: 0.7;
+		padding-top: 17px;
+	}
+	
+	.vr {
+		display: none;
+		width: 1px;
+		background-color:#3c3c3c;
+		position:absolute;
+		top: 40px;
+		bottom: -40px;
+		left: 76%;
+	}
 }
 
 .zapati {

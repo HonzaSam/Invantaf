@@ -6,7 +6,8 @@
 		<title>Venovano Petovi Zackovi. S laskou Honza.</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neue Helvetica">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/declarativeToggle.js"></script>
 	</head>
 	
 	<body>
@@ -14,19 +15,18 @@
 			<div class="vrsek">
 				<div class="vr1">&nbsp;</div>
 				<div class="zahlavi">
+					<span data-toggle-target=".nav" class="toggle-btn">MENU</span>
 					<div class="navigace">
-						<nav>
+						<nav class="nav">
 							<ul>
-								<li><a href="#">home</a></li>
-								<li><a href="#text">about us</a></li><a id="about us"></a>
+								<li><a href="#">home</a></li><a id="about us"></a>
+								<li><a href="#text">about us</a></li>
 								<li><a href="#contacts">contacts</a></li>
 							</ul>
-							<div class="fix">
-							<div>
 						</nav>	
 					</div>
 					<div class="jazyky">
-						<p>EN <a href="#"><img src="images/arrow.png"></a></p>
+						<p>CZ <a href="#"><img src="images/arrow.png"></a></p>
 					</div>
 				</div>
 				<div class="mix">
@@ -42,7 +42,7 @@
 						<p><a href="#text"><img src="images/arrow.png"></a></p>
 					</div>
 					</div>
-				<div class="text">
+				<div class="text"><a id="text"></a>
 					<div class="nadpis">
 						<h2>who we are</h2>
 					</div>

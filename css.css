@@ -180,21 +180,25 @@ background-image: url(images/logo_transparent4.png), url(images/triangles.png), 
 	}
 	
 	
-	.navigace a {
+	.nav1 a {
 		padding: 0px 0px;
 		font-weight: normal;
 		}
 
-	.navigace li {
+	.nav1 li {
 		list-style: none;
 		float: none;
 		text-align: right;
 	}
 
-	.navigace {
+	.nav1 {
 		list-style: none;
 		margin-top: 0px;
 		padding-right: 30px;
+	}
+
+	.black.scrolled {
+		display: none;
 	}
 }
 

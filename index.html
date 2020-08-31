@@ -17,7 +17,7 @@
 				<div class="zahlavi">
 					<span data-toggle-target=".nav" class="toggle-btn">MENU</span>
 					<div class="navigace">
-						<nav class="nav">
+						<nav class="nav1 black">
 							<ul>
 								<li><a href="#">home</a></li><a id="about us"></a>
 								<li><a href="#text">about us</a></li>
@@ -26,7 +26,10 @@
 						</nav>	
 					</div>
 					<div class="jazyky">
-						<p>CZ <a href="#"><img src="images/arrow.png"></a></p>
+						<nav class="nav2 black">
+						 <p>CZ <a href="#"><img src="images/arrow.png"></a></p>
+						</nav>
+						
 					</div>
 				</div>
 				<div class="mix">
@@ -106,6 +109,23 @@
 				
 			</div>
 		</div>
+		<script>
+		var navbar = document.querySelectorAll(".black")	
+		window.onscroll = function() {
+		
+		  // pageYOffset or scrollY
+		  if (window.pageYOffset > 0) {
+			navbar[0].classList.add('scrolled')
+		  } else {
+			navbar[0].classList.remove('scrolled')
+		  }
+		  if (window.pageYOffset > 0) {
+			navbar[1].classList.add('scrolled')
+		  } else {
+			navbar[1].classList.remove('scrolled')
+		  }
+		}
+		</script>
 	</body>
 	
 </html>
